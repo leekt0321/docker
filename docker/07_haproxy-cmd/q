@@ -1,0 +1,26 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (]8;;file://docker1.example.com/usr/lib/systemd/system/docker.service/usr/lib/systemd/system/docker.service]8;;; [0;1;32menabled[0m; preset: [0;1;38;5;185mdisabled[0m)
+     Active: [0;1;32mactive (running)[0m since Tue 2024-04-02 20:15:21 KST; 55min ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: ]8;;https://docs.docker.comhttps://docs.docker.com]8;;
+   Main PID: 1272 (dockerd)
+      Tasks: 49
+     Memory: 91.7M
+        CPU: 5.872s
+     CGroup: /system.slice/docker.service
+             ├─[0;38;5;245m 1272 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock[0m
+             ├─[0;38;5;245m13055 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8404 -container-ip 172.21.0.5 -container-port 8404[0m
+             ├─[0;38;5;245m13072 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8404 -container-ip 172.21.0.5 -container-port 8404[0m
+             ├─[0;38;5;245m13089 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 80 -container-ip 172.21.0.5 -container-port 80[0m
+             └─[0;38;5;245m13095 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 80 -container-ip 172.21.0.5 -container-port 80[0m
+
+ 4월 02 20:46:36 docker1.example.com dockerd[1272]: time="2024-04-02T20:46:36.226995649+09:00" level=info msg="ignoring event" container=8c0dee28209eb55ff39cc87431fd8e2a1cb8e0c8f52ab9f912c9df21a9fb31eb module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 20:46:36 docker1.example.com dockerd[1272]: time="2024-04-02T20:46:36.227750818+09:00" level=info msg="ignoring event" container=1b773e6505b39cb1cc606a108748b592c38d5af8b2660331d37f858566acd3c3 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 20:47:19 docker1.example.com dockerd[1272]: time="2024-04-02T20:47:19.776596043+09:00" level=info msg="ignoring event" container=9b306d8a4642a36a9b69cbf9add46bb9889e998601142bc5fe3c55769d11d1a8 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 20:47:38 docker1.example.com dockerd[1272]: time="2024-04-02T20:47:38.157031774+09:00" level=info msg="ignoring event" container=b9e9f31c30fc1091b4d0c8d36a5c3153ea8dd650adab2a7bbaa2e3a43a49282f module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 20:47:38 docker1.example.com dockerd[1272]: time="2024-04-02T20:47:38.157777367+09:00" level=info msg="ignoring event" container=ea9a68985ae1788986d11e5d2fb6440330dea93cbe76e87d8ce70febe3ce0710 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 20:47:38 docker1.example.com dockerd[1272]: time="2024-04-02T20:47:38.160896812+09:00" level=info msg="ignoring event" container=8efc32d25264206ca7a161f9f210682258ceb5db8693cb0980f6ac6bf024882a module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 20:48:02 docker1.example.com dockerd[1272]: time="2024-04-02T20:48:02.485270561+09:00" level=info msg="ignoring event" container=0cf995fa6c255b76fab460aeeb7a67eca82dbfee640a0bc6aaf0a11654ed083e module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 21:06:25 docker1.example.com dockerd[1272]: time="2024-04-02T21:06:25.034372035+09:00" level=info msg="ignoring event" container=87ee1a30478a16631e7e37ce6dafe8ebe842dfb357af77b8aab8b6d19f8dd466 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 21:06:25 docker1.example.com dockerd[1272]: time="2024-04-02T21:06:25.036991289+09:00" level=info msg="ignoring event" container=16c921893a805068f43de21300d6faac8da3748f94c668db3075031dd79a51dc module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+ 4월 02 21:06:25 docker1.example.com dockerd[1272]: time="2024-04-02T21:06:25.037012125+09:00" level=info msg="ignoring event" container=6e33c386a13b79e8718fd6ac45e344b9bb4c3fe91cd765762c70c724c6e04f4b module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
